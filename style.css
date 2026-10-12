@@ -1,0 +1,322 @@
+/* Arshaka Cashier - Clean Responsive Legal CSS */
+:root {
+  --primary: #0b3475;
+  --primary-dark: #072350;
+  --primary-light: #e8f0fe;
+  --text-main: #1f2937;
+  --text-muted: #4b5563;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --border: #e2e8f0;
+  --border-focus: #3b82f6;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --danger-border: #fecaca;
+  --warning: #92400e;
+  --warning-bg: #fffbeb;
+  --warning-border: #fde68a;
+  --success: #065f46;
+  --success-bg: #ecfdf5;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  padding: 0;
+  margin: 0;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #ffffff;
+  padding: 2.25rem 1.25rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.brand-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.site-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  color: #dbeafe;
+  max-width: 650px;
+}
+
+.nav-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 1.25rem;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.875rem;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.nav-link.active {
+  color: var(--primary);
+  background-color: var(--primary-light);
+  font-weight: 700;
+}
+
+.main-container {
+  max-width: 860px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.25rem;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.75rem;
+}
+
+.meta-box {
+  background-color: #f1f5f9;
+  border-left: 4px solid var(--primary);
+  padding: 0.85rem 1.25rem;
+  border-radius: 4px 8px 8px 4px;
+  margin-bottom: 1.75rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.meta-box p {
+  margin: 0.15rem 0;
+}
+
+.intro-lead {
+  font-size: 1.05rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.clause-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.clause-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.clause-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.clause-text {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.clause-text p {
+  margin-bottom: 0.65rem;
+}
+
+.clause-text p:last-child {
+  margin-bottom: 0;
+}
+
+.notice-box {
+  padding: 1.15rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.notice-box.warning {
+  background-color: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  color: var(--warning);
+}
+
+.notice-box.danger {
+  background-color: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: var(--danger);
+}
+
+.notice-box.success {
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success);
+}
+
+.notice-box.info {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.hub-card {
+  display: block;
+  text-decoration: none;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-focus);
+}
+
+.hub-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.hub-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.contact-highlight {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-top: 0.75rem;
+}
+
+.placeholder-badge {
+  display: inline-block;
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #f87171;
+}
+
+.steps-list {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+.steps-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  background-color: #ffffff;
+}
+
+.footer-nav {
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+  .card {
+    padding: 1.25rem;
+  }
+  .clause-title {
+    font-size: 1.05rem;
+  }
+}
